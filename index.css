@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+#hotbar{
+    z-index: 10;
+    padding: 0;
+    width:100vw;
+    height:10vh;
+    background-color: rgb(8, 8, 8);
+    position: fixed;
+    
+}
+
+.hotbar-elements {
+    color: white;
+    font-size: 48px;
+    top: 50%;
+    /* transform: translateY(-50%); */ 
+}
+
+#text {
+    padding-top: 12vh;
+    height:150vh;
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(184, 184, 197);
+}
+
+.text-title {
+    width: 100%;
+    text-align: center;
+}
+
+div.inline {
+    float:left;
+}
