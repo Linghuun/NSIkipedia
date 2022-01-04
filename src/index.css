@@ -15,8 +15,7 @@ body {
 .hotbar-elements {
     color: white;
     font-size: 48px;
-    top: 50%;
-    /* transform: translateY(-50%); */ 
+    vertical-align: text-bottom;
 }
 
 #text {
