@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #939dacff;
 }
 
 #hotbar{
@@ -7,7 +8,7 @@ body {
     padding: 0;
     width:100vw;
     height:10vh;
-    background-color: rgb(8, 8, 8);
+    background-color: #1c1f24ff;
     position: fixed;
     
 }
@@ -25,7 +26,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(184, 184, 197);
+    background-color: #6f7c91ff;
 }
 
 .text-title {
