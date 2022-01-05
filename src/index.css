@@ -3,14 +3,14 @@
     padding: 0;
     width:100vw;
     height:10vh;
-    background-color: #1c1c24ff;
+    background-color: #002b22ff;
     position: fixed;
     
 }
 
 body {
     margin: 0;
-    background-color: #6f6f91ff;
+    background-color: #ffffff;
 }
 
 .hotbar-elements {
@@ -26,7 +26,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #373748ff;
+    background-color: #dbe3deff;
 }
 
 .text-title {
