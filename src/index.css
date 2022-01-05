@@ -1,39 +1,23 @@
-#hotbar{
-    z-index: 10;
-    padding: 0;
-    width:100vw;
-    height:10vh;
-    background-color: #002b22ff;
-    position: fixed;
-    
+:root {
+    font-family: 'Roboto';
+    font-size: 16px;
 }
 
 body {
+    /* retire le décalage */
     margin: 0;
-    background-color: #ffffff;
 }
 
-.hotbar-elements {
-    color: white;
-    font-size: 48px;
-    vertical-align: text-bottom;
+
+#nav-bar {
+    width: 5rem;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
 }
 
-#text {
-    padding-top: 12vh;
-    height:150vh;
-    width: 60vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #dbe3deff;
-}
 
-.text-title {
-    width: 100%;
-    text-align: center;
-}
-
-div.inline {
-    float:left;
+#main {
+    margin-left: 5rem;
+    padding-left: 1vw;
 }
