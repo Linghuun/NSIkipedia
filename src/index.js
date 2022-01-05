@@ -1,9 +1,13 @@
 function load() {
     var navSettings = document.getElementById('nav-settings');
 
-    navSettings.style.cursor = 'pointer';
-    navSettings.onclick = function() {
-        this.style.backgroundColor = 'red';
-        this.style.height = "5rem";
-    };
+    navSettings.addEventListener("click",
+        function() {
+            this.classList.toggle("is-maximized");
+            navSettingsItems = document.getElementsByClassName("nav-settings-items");
+            for (var i = 0; i < navSettingsItems.length; i++) {
+                navSettingsItems[i].classList.toggle("is-maximized");
+            }
+        }
+    );
 }

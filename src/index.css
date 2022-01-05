@@ -45,12 +45,27 @@ body {
 #nav-settings {
     height: 2rem;
     display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     background-color: green;
+    /* animations */
+    transition: all 300ms;
 }
 
 #nav-settings:hover {
     background-color: greenyellow;
+}
+
+#nav-settings.is-maximized {
+    align-items: flex-start;
+    height: 15rem;
+}
+
+.nav-settings-items {
+    transition: all 300ms;
+    transform: translateY(25%);
+}
+
+.nav-settings-items.is-maximized {
+    transform: translateY(0%);
 }
