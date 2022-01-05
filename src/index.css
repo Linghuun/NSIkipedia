@@ -24,6 +24,7 @@ body {
     display: flex;
     list-style: none;
     height: 100%;
+    align-items: center;
 }
 
 
@@ -33,9 +34,16 @@ body {
 }
 
 .nav-item {
-    width: 100%;
+    width: 90%;
+    text-align: center;
 }
 
 .nav-item:last-child {
     margin-top: auto;
+}
+
+.nav-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
