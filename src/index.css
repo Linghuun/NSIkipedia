@@ -1,6 +1,7 @@
 :root {
     font-family: 'Roboto';
     font-size: 16px;
+    --nav-size: 16rem;
 }
 
 body {
@@ -9,15 +10,32 @@ body {
 }
 
 
-#nav-bar {
-    width: 5rem;
+.navbar {
+    width: var(--nav-size);
     height: 100vh;
     background-color: gray;
     position: fixed;
 }
 
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
 
-#main {
-    margin-left: 5rem;
+
+.main {
+    margin-left: var(--nav-size);
     padding-left: 1vw;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
 }
