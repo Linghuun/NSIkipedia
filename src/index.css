@@ -30,8 +30,10 @@ body {
 
 
 .main {
+    height: 100vh;
     margin-left: var(--nav-size);
     padding-left: 15px;
+    background-color: royalblue;
 }
 
 .nav-item {
