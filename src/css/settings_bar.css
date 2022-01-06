@@ -4,7 +4,7 @@
     --nav-size: 12rem;
 }
 
-#nav-settings {
+#settings {
     align-items: flex-start;
     height: 1.8rem;
     display: flex;
@@ -16,11 +16,11 @@
 }
 
 
-#nav-settings.is-maximized {
+#settings.is-maximized {
     height: 5rem;
 }
 
-#nav-settings-title {
+#settings-title {
     font-weight: bold;
     padding: 5px;
     display: flex;
@@ -29,18 +29,18 @@
     background-color: red;
 }
 
-#nav-settings-title:hover {
+#settings-title:hover {
     background-color: pink;
 }
 
-.nav-settings-main {
+.settings-main {
     padding: 5px;
     height: 100%;
     width: 100%;
     background-color: aqua;
 }
 
-.nav-settings-items {
+.settings-items {
     background-color: saddlebrown;
     display: flex;
     justify-content: space-between;

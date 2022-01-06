@@ -1,6 +1,6 @@
 function load() {
-    var navSettings = document.getElementById("nav-settings");
-    var navSettingsTitle = document.getElementById("nav-settings-title");
+    var navSettings = document.getElementById("settings");
+    var navSettingsTitle = document.getElementById("settings-title");
 
     navSettingsTitle.addEventListener("click",
         function() {
