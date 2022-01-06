@@ -21,6 +21,7 @@
 }
 
 #nav-settings-title {
+    font-weight: bold;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -37,4 +38,10 @@
     height: 100%;
     width: 100%;
     background-color: aqua;
+}
+
+.nav-settings-items {
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: space-between;
 }
