@@ -43,9 +43,12 @@ body {
 }
 
 #nav-settings {
-    height: 2rem;
+    align-items: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 1rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     background-color: green;
     /* animations */
@@ -57,15 +60,18 @@ body {
 }
 
 #nav-settings.is-maximized {
-    align-items: flex-start;
     height: 15rem;
 }
 
-.nav-settings-items {
-    transition: all 300ms;
-    transform: translateY(25%);
+.nav-settings-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
 }
 
-.nav-settings-items.is-maximized {
-    transform: translateY(0%);
+.nav-settings-main {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
 }
