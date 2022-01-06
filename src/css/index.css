@@ -44,38 +44,3 @@ body {
 .nav-item:last-child {
     margin-top: auto;
 }
-
-#nav-settings {
-    align-items: flex-start;
-    height: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: green;
-    /* animations */
-    transition: all 300ms;
-}
-
-
-#nav-settings.is-maximized {
-    height: 15rem;
-}
-
-#nav-settings-title {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: red;
-}
-
-#nav-settings-title:hover {
-    background-color: pink;
-}
-
-.nav-settings-main {
-    padding: 5px;
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
-}
