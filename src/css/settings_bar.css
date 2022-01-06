@@ -1,7 +1,7 @@
 :root {
     font-family: 'Roboto';
     font-size: 16px;
-    --nav-size: 16rem;
+    --nav-size: 12rem;
 }
 
 #nav-settings {
@@ -17,7 +17,7 @@
 
 
 #nav-settings.is-maximized {
-    height: 15rem;
+    height: 5rem;
 }
 
 #nav-settings-title {
