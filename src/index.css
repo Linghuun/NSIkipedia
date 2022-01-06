@@ -31,7 +31,7 @@ body {
 
 .main {
     margin-left: var(--nav-size);
-    padding-left: 1vw;
+    padding-left: 15px;
 }
 
 .nav-item {
@@ -62,8 +62,8 @@ body {
 #nav-settings-title {
     padding: 5px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     background-color: red;
 }
 
