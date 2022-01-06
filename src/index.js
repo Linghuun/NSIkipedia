@@ -1,9 +1,10 @@
 function load() {
     var navSettings = document.getElementById('nav-settings');
+    var navSettingsTitle = document.getElementById('nav-settings-title');
 
-    navSettings.addEventListener("click",
+    navSettingsTitle.addEventListener("click",
         function() {
-            this.classList.toggle("is-maximized");
+            navSettings.classList.toggle("is-maximized");
         }
     );
 }

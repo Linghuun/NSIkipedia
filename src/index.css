@@ -44,9 +44,7 @@ body {
 
 #nav-settings {
     align-items: flex-start;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height: 1rem;
+    height: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,19 +53,21 @@ body {
     transition: all 300ms;
 }
 
-#nav-settings:hover {
-    background-color: greenyellow;
-}
 
 #nav-settings.is-maximized {
     height: 15rem;
 }
 
-.nav-settings-title {
+#nav-settings-title {
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: red;
+}
+
+#nav-settings-title:hover {
+    background-color: pink;
 }
 
 .nav-settings-main {
