@@ -19,7 +19,7 @@ body {
 
 .navbar-nav {
     margin: 0;
-    padding: 5px;
+    padding: 0px;
     flex-direction: column;
     display: flex;
     list-style: none;
