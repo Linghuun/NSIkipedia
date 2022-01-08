@@ -33,7 +33,7 @@ body {
 
 
 .main {
-    height: 100vh;
+    height: 100%;
     margin-left: 13rem;
     padding-left: 10px;
     background-color: royalblue;
