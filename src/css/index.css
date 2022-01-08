@@ -7,14 +7,17 @@
 body {
     /* retire le décalage */
     margin: 0;
+    background-color: chocolate;
 }
 
 
 .navbar {
     width: var(--nav-size);
+    margin-right: 2rem;
     height: 100vh;
     background-color: gray;
     position: fixed;
+    margin-right: 2rem;
 }
 
 .navbar-nav {
@@ -31,8 +34,8 @@ body {
 
 .main {
     height: 100vh;
-    margin-left: var(--nav-size);
-    padding-left: 20px;
+    margin-left: 14rem;
+    padding-left: 10px;
     background-color: royalblue;
 }
 
