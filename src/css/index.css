@@ -55,6 +55,17 @@ body {
     text-align: center;
 }
 
-/* .nav-item:last-child {
+.nav-item:last-child {
     margin-top: auto;
-} */
+}
+
+
+.logo_img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    height: 90%;
+    width: 90%;
+}

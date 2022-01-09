@@ -9,8 +9,6 @@
 }
 
 #settings {
-
-    margin-top: auto;
     padding: 0;
     align-items: flex-start;
     height: 2rem;
@@ -59,14 +57,4 @@
 .settings-items {
     display: flex;
     justify-content: space-between;
-}
-
-.logo_img {
-    width: 100%;
-    height: auto;
-}
-
-.logo {
-    height: 90%;
-    width: 90%;
 }
