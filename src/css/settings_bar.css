@@ -4,7 +4,8 @@
 
     --nav-size: 12rem;
     --nav-color: #002b22ff;
-    --settings-color: #005544ff;
+    --settings-color: #165044ff;
+    --settings-color-hover: #005544ff;
 }
 
 #settings {
@@ -32,6 +33,7 @@
     border-top-width: 0.5rem;
     border-left-width: 0.5rem;
     border-right-width: 0.5rem;
+    border-bottom-width: 0rem;
     border-radius: 0.5rem 0.5rem 0 0;
     border-color: var(--settings-color);
     
@@ -44,8 +46,8 @@
 }
 
 #settings-title:hover {
-    background-color: pink;
-    border-color: pink;
+    background-color: var(--settings-color-hover);
+    border-color: var(--settings-color-hover);
 }
 
 .settings-main {
