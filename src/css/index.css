@@ -1,13 +1,19 @@
 :root {
     font-family: 'Roboto';
     font-size: 16px;
+    color: white;
+
     --nav-size: 16rem;
+
+    --body-color: #93ac93ff;
+    --nav-color: #002b22ff;
+    --main-color: #dbe3deff;
 }
 
 body {
     /* retire le décalage */
     margin: 0;
-    background-color: chocolate;
+    background-color: var(--body-color);
 }
 
 
@@ -15,7 +21,7 @@ body {
     width: var(--nav-size);
     margin-right: 2rem;
     height: 100vh;
-    background-color: gray;
+    background-color: var(--nav-color);
     position: fixed;
     margin-right: 2rem;
 }
@@ -36,7 +42,8 @@ body {
     height: 100%;
     margin-left: 13rem;
     padding-left: 10px;
-    background-color: royalblue;
+    background-color: var(--main-color);
+    color: black;
 }
 
 .nav-item {
@@ -48,6 +55,6 @@ body {
     text-align: center;
 }
 
-.nav-item:last-child {
+/* .nav-item:last-child {
     margin-top: auto;
-}
+} */
