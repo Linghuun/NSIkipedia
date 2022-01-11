@@ -82,3 +82,8 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
+.main h1 {
+	text-align: center;
+	font-weight: bold;
+}
