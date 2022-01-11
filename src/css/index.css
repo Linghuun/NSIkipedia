@@ -41,7 +41,10 @@ body {
 .main {
     height: 100%;
     margin-left: 13rem;
-    padding-left: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: justify;
+    text-justify: distribute-all-lines;
     background-color: var(--main-color);
     color: black;
 }
