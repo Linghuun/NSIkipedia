@@ -90,13 +90,13 @@ body {
 
 a {
     width: 100%;
-    height: 2.25rem;
+    padding: 0.5rem 0;
     color: papayawhip;
     text-decoration: unset;
+    text-align: center;
 }
 
 
 a:hover {
     background-color: #008066ff;
-    text-decoration: unset;
 }
