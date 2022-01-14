@@ -56,13 +56,12 @@ html, body {
 
 
 .logo_img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
-.logo {
-    height: 90%;
-    width: 90%;
+#logo_link {
+    all: unset;
 }
 
 .unselectable {
