@@ -1,0 +1,4 @@
+À propos:
+    - sommaire
+    - la liste des personnes ayant participés à ce projet
+    - le github

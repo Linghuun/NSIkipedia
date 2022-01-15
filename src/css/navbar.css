@@ -8,6 +8,8 @@
     --body-color: #93ac93ff;
     --nav-color: #002b22ff;
     --main-color: #dbe3deff;
+
+    --hover-link: #008066ff;
 }
 
 
@@ -84,5 +86,5 @@ html, body {
 
 
 .nav-item a:hover {
-    background-color: #008066ff;
+    background-color: var(--hover-link);
 }
