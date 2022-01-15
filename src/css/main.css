@@ -14,7 +14,7 @@
 .main {
     margin-left: 13rem;
     padding: 1.5rem;
-    height: 95vh;
+    /* height: 100%; */
     text-align: justify;
     text-justify: distribute-all-lines;
     background-color: var(--main-color);
