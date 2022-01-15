@@ -14,14 +14,14 @@
 .main {
     margin-left: 13rem;
     padding: 1.5rem;
-    /* height: 100%; */
+    height: auto;
     text-align: justify;
     text-justify: distribute-all-lines;
     background-color: var(--main-color);
     color: black;
 }
 
-.main h1 {
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
     margin-top: 0;
 	text-align: center;
 	font-weight: bold;
