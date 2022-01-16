@@ -53,6 +53,13 @@ class SnakeGame {
     moveSnake() {
         var newX = this.snake[this.snake.length-1][0] + this.direction[0];
         var newY = this.snake[this.snake.length-1][1] + this.direction[1];
+
+        console.log(this.snake.includes([newX, newY]));
+
+        if (newX >= this.gridSize || newY >= this.gridSize || newX < 0 || newY < 0) {
+            this.snakeDied();
+            return;
+        }
         
         this.snake.push([
             newX,
@@ -62,17 +69,16 @@ class SnakeGame {
         var lastPart = this.getGridElement(this.snake[0][0], this.snake[0][1]);
         var newPart = this.getGridElement(newX, newY);
 
-        if ((newX > this.gridSize || newY > this.gridSize || newX < 0 || newY < 0) && !this.die) {
-            this.die();
+        if (newPart.style.backgroundColor == this.appleColor) {
+            this.genApple();
+        } else if (newPart.style.backgroundColor == this.snakeColor) {
+            this.snakeDied();
         } else {
-            if (newPart.style.backgroundColor != this.appleColor) {
-                this.snake.shift();
-                lastPart.style.backgroundColor = this.void;
-            } else {
-                this.genApple();
-            }
-            newPart.style.backgroundColor = this.snakeColor;
+            this.snake.shift();
+            lastPart.style.backgroundColor = this.void;
         }
+        newPart.style.backgroundColor = this.snakeColor;
+        
     }
 
 
@@ -109,17 +115,16 @@ class SnakeGame {
     genApple() {
         var appleX = Math.floor(Math.random() * this.gridSize);
         var appleY = Math.floor(Math.random() * this.gridSize);
-        
+
         var gridItem = this.getGridElement(appleX, appleY);
         if (gridItem != null) {
             gridItem.style.backgroundColor = this.appleColor;
         }
     }
 
-    die() {
+    snakeDied() {
         this.die = true;
-        alert("die");
     }
 }
 
-const snakeGame = new SnakeGame(1, 100, 50);
+const snakeGame = new SnakeGame(1, 150, 10);

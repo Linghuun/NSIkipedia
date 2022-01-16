@@ -1,4 +1,5 @@
 #grid {
+    margin: auto;
     /* width: 18rem;                            sera généré par javascript
     height: 18rem;                              sera généré par javascript */
     display: grid;
