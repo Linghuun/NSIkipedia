@@ -1,25 +1,15 @@
-/* .grid_column {
-    width: 2rem;
-    height: 2rem;
-    border: 0.1rem solid black;
-    text-align: center;
-}
-
-.grid_row {
-    width: 17rem;
-} */
-
 #grid {
     /* width: 18rem;                            sera généré par javascript
     height: 18rem;                              sera généré par javascript */
     display: grid;
+    border: 3px solid black;
     /* grid-template-columns: auto auto;        sera généré par javascript
     grid-template-rows: auto auto;              sera généré par javascript */
 
 }
 
 .grid-item {
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-  }
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
