@@ -12,6 +12,7 @@ class SnakeGame {
         this.speed = speed;
         this.gridSize = gridSize;
 
+        this.die = false;
         this.snake = [[5, 5]];
         this.gridElement = document.getElementById("grid");
         this.direction = [1, 0];
@@ -29,7 +30,7 @@ class SnakeGame {
 
 
     async start() {
-        while (1) {
+        while (!this.die) {
             await this.sleep(this.speed);
             this.moveSnake();
         }
@@ -52,11 +53,7 @@ class SnakeGame {
     moveSnake() {
         var newX = this.snake[this.snake.length-1][0] + this.direction[0];
         var newY = this.snake[this.snake.length-1][1] + this.direction[1];
-
-        if (newX > this.gridSize || newY > this.gridSize || newX < 0 || newY < 0) {
-            this.die();
-        }
-
+        
         this.snake.push([
             newX,
             newY
@@ -65,14 +62,17 @@ class SnakeGame {
         var lastPart = this.getGridElement(this.snake[0][0], this.snake[0][1]);
         var newPart = this.getGridElement(newX, newY);
 
-        if (newPart.style.backgroundColor != this.appleColor) {
-            this.snake.shift();
-            lastPart.style.backgroundColor = this.void;
+        if ((newX > this.gridSize || newY > this.gridSize || newX < 0 || newY < 0) && !this.die) {
+            this.die();
         } else {
-            this.genApple();
+            if (newPart.style.backgroundColor != this.appleColor) {
+                this.snake.shift();
+                lastPart.style.backgroundColor = this.void;
+            } else {
+                this.genApple();
+            }
+            newPart.style.backgroundColor = this.snakeColor;
         }
-        
-        newPart.style.backgroundColor = this.snakeColor;
     }
 
 
@@ -117,6 +117,7 @@ class SnakeGame {
     }
 
     die() {
+        this.die = true;
         alert("die");
     }
 }
