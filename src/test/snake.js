@@ -1,13 +1,16 @@
 class SnakeGame {
     /**
      * @param {int} startSize  need to be > 1
-     * @param {float} speed     in millisecond
+     * @param {float} speed    in millisecond
+     * @param {int} gridSize   the size of the grid 
      */
-    constructor(startSize, speed) {
+    constructor(startSize, speed, gridSize) {
         this.start_size = startSize;
         this.speed = speed;
+        this.gridSize = gridSize;
+
         this.snake = [];
-        this.snakeGrid = document.getElementById("game_grid");
+        this.gridElement = document.getElementById("grid");
 
         for (let i = 0; i < this.startSize; i++) {
             this.snake.push([i, 0]);
@@ -18,17 +21,15 @@ class SnakeGame {
     }
 
     genGrid() {
-        for (let i = 0; i < 7; i++) {
-            var newRow = document.createElement("div");
-            newRow.classList.add("grid_row");
-            this.snakeGrid.appendChild(newRow);
+        var gridTemplate =  " auto".repeat(this.gridSize) + ";";
+        this.gridElement.style.cssText += "width:" + this.gridSize*2 + "rem; height:" + this.gridSize*2 + "rem; grid-template-columns:" + gridTemplate + " grid-template-rows: " + gridTemplate;
 
-            for (let j = 0; j < 7; j++) {
-                var newColumn = document.createElement("div");
-                newColumn.classList.add("grid_column")
-                newColumn.innerText = i.toString() + ";" + j.toString();
-                this.newRow.appendChild(newColumn);
-            }
+        for (let i = 0; i < (this.gridSize*this.gridSize); i++) {
+            var newGridItem = document.createElement("div");
+            newGridItem.id = "grid_item_" + i;
+            newGridItem.classList.add("grid-item");
+            newGridItem.innerText = i
+            this.gridElement.appendChild(newGridItem);
         }
     }
 
@@ -51,4 +52,12 @@ class SnakeGame {
     }
 }
 
-const snakeGame = new SnakeGame(1, 5);
+const snakeGame = new SnakeGame(1, 5, 5);
+
+function update_function() {
+    var x = parseInt(document.getElementById("x_value").value);
+    var y = parseInt(document.getElementById("y_value").value);
+    var case_id = y*snakeGame.gridSize + x;
+    var element = document.getElementById("grid_item_" + case_id);
+    element.style.backgroundColor = "red";
+}

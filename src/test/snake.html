@@ -5,15 +5,14 @@
     <link href="snake.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="game_grid">
-        <!-- <div id="one" class="grid_item">1</div>
-        <div id="two" class="grid_item">2</div>
-        <div id="three" class="grid_item">3</div>
-        <div id="four" class="grid_item">4</div>
-        <div id="five" class="grid_item">5</div>
-        <div id="six" class="grid_item">6</div>
-        <div id="seven" class="grid_item">7</div> -->
-    </div>
+    <div id="grid"></div>
+    <br>
+    <span>x: </span>
+    <input type="text" value="0" id="x_value">
+    <span>y: </span>
+    <input type="text" value="0" id="y_value">
+    <br>
+    <button onclick="update_function()">Update</button>
     <script src="snake.js"></script>
 </body>
 </html>
