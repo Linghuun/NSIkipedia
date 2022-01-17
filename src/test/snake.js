@@ -127,4 +127,4 @@ class SnakeGame {
     }
 }
 
-const snakeGame = new SnakeGame(1, 150, 10);
+const snakeGame = new SnakeGame(1, 75, 50);
