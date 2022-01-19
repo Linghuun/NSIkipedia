@@ -1,0 +1,13 @@
+Un algorithme est une suite finie et non ambiguë d'instructions et d’opérations permettant de résoudre une classe de problèmes.
+
+Un algorithme est une méthode générale pour résoudre un type de problèmes. Il est dit correct lorsque, pour chaque instance du problème, il se termine en produisant la bonne sortie, c'est-à-dire qu'il résout le problème posé.
+
+L'efficacité d'un algorithme est mesurée notamment par :
+
+- Sa durée de calcul 
+
+- Sa consommation de mémoire vive (en partant du principe que chaque instruction a un temps d'exécution constant) 
+
+- La précision des résultats obtenus (par exemple avec l'utilisation de méthodes probabilistes) 
+
+- Sa scalabilité (son aptitude à être efficacement parallélisé) 
