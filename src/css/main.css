@@ -43,12 +43,7 @@ Made by Damien and Adam
 .main img{
 	border: 3px solid var(--nav-color);
 	margin: 1rem;
-	margin-bottom:0px;
-	width:250px;
-	height:auto;
-}
-
-.main img {
-    width: 45%;
+	margin-bottom: 0px;
+    width: 25%;
     height: auto;
 }
