@@ -1,5 +1,5 @@
 /*
-Made by Damien
+Made by Damien and Adam
 */
 
 :root {
@@ -30,4 +30,26 @@ Made by Damien
     margin-top: 0;
 	text-align: center;
 	font-weight: bold;
+}
+
+.main section{
+	text-align:center;
+}
+
+.main p{
+	text-indent: 1rem;
+}
+
+.main img{
+	border: 3px solid var(--nav-color);
+	margin: 1rem;
+	margin-bottom:0px;
+	width:250px;
+	height:auto;
+}
+
+.main .paragraph{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
 }
