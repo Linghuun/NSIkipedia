@@ -48,8 +48,7 @@ Made by Damien and Adam
 	height:auto;
 }
 
-.main .paragraph{
-	align-items: center;
-	display: flex;
-	flex-direction: row;
+.main img {
+    width: 45%;
+    height: auto;
 }
