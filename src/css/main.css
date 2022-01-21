@@ -14,6 +14,11 @@ Made by Damien and Adam
     --main-color: #dbe3deff;
 }
 
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
 
 .main {
     margin-left: 13rem;
