@@ -92,3 +92,7 @@ html, body {
 .nav-item a:hover {
     background-color: var(--hover-link);
 }
+
+.selected_page {
+    background-color: var(--hover-link);
+}
