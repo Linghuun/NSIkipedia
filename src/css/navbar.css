@@ -8,32 +8,22 @@ Made by Damien
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 300;
-    color: white;
-
-    --nav-size: 16rem;
-
-    --body-color: #93ac93ff;
-    --nav-color: #002b22ff;
-    --main-color: #dbe3deff;
-
-    --hover-link: #008066ff;
 }
-
+/* 
 
 html, body {
-    /* retire le décalage */
+    retire le décalage
     margin: 0;
     padding: 0;
     height: 100%;
     min-height: 100%;
     background-color: var(--body-color);
-}
+} */
 
 
 .navbar {
     width: var(--nav-size);
-    margin-right: 2rem;
-    height: 100vh;
+    height: 100%;
     background-color: var(--nav-color);
     position: fixed;
     margin-right: 2rem;
@@ -46,6 +36,7 @@ html, body {
     display: flex;
     list-style: none;
     height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -93,9 +84,9 @@ html, body {
 
 
 .nav-item a:hover {
-    background-color: var(--hover-link);
+    background-color: var(--nav-hover-link);
 }
 
 .selected_page {
-    background-color: var(--hover-link);
+    background-color: var(--nav-hover-link);
 }

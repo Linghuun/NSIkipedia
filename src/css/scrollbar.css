@@ -1,19 +1,15 @@
-/*
-Made by Damien
-*/
-
 ::-webkit-scrollbar {
     width: 10px;
 }
   
 ::-webkit-scrollbar-track {
-    background: #93ac93ff;
+    background: #6f7c91ff;
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #536c5dff;
+    background: #373e48ff;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #536c5dff;
+    background: #373e48ff;
 }

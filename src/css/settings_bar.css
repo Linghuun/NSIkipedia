@@ -8,11 +8,6 @@ Made by Damien
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 300;
-
-    --nav-size: 12rem;
-    --nav-color: #002b22ff;
-    --settings-color: #165044ff;
-    --settings-color-hover: #008066ff;
 }
 
 #settings {
