@@ -2,15 +2,6 @@
 Made by Damien and Adam
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
-
-:root {
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 300;
-    color: white;
-}
-
 .main strong {
     font-weight: 400;
 }
@@ -23,7 +14,7 @@ Made by Damien and Adam
     text-align: justify;
     text-justify: distribute-all-lines;
     background-color: var(--main-color);
-    color: black;
+    color: var(--main-text-color);
 }
 
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {

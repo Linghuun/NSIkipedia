@@ -2,14 +2,6 @@
 Made by Damien
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
-
-:root {
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 300;
-}
-
 #settings {
     padding: 0;
     align-items: flex-start;
@@ -24,7 +16,7 @@ Made by Damien
 
 
 #settings.is-maximized {
-    height: 5rem;
+    height: 6rem;
 }
 
 #settings-title {
@@ -52,11 +44,23 @@ Made by Damien
 
 .settings-main {
     height: 100%;
-    width: 100%;
+    width: 11rem;
     background-color: var(--settings-color);
+    border: 0.5rem solid var(--settings-color);
+    border-top: 0.2rem solid var(--body-color);
+    padding-top: 0.2rem;
 }
 
 .settings-items {
     display: flex;
     justify-content: space-between;
+}
+
+.settings-main select {
+    width: 30%;
+    text-align: center;
+    background-color: var(--nav-color);
+    border: 3px solid var(--nav-color);
+    border-radius: 0.5rem;
+    color: white;
 }
