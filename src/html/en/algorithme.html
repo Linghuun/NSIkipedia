@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>NSI Live Action</title>
+    
+    <!-- CSS -->
+    <link href="../../css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../css/settings_bar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/scrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/global.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="logo_link" href="index.html">
+            <img class="logo_img" src="../../assets/logo.png">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="unselectable">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="algorithme.html" class="unselectable selected_page">I - What's an algorithm ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="programming_language.html" class="unselectable">II - What's a programming language ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="languages.html" class="unselectable">III - Why there is so many language ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="licences.html" class="unselectable">IV - What are software licenses ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="unselectable">About</a>
+        </li>
+        <li class="nav-item" id="settings">
+          <div id="settings-title">
+            <label class="unselectable">Settings</label>
+          </div>
+          <div class="settings-main">
+            <div class="settings-items" id="settings-language">
+              <label class="unselectable">Language:</label>
+              <select id="settings-language-select">
+                <option value="0" selected>fr</option>
+                <option value="1">en</option>
+              </select>
+            </div>
+            <div class="settings-items">
+              <label for="dark_mode" class="unselectable">Dark Mod:</label>
+              <input type="checkbox" id="dark_mode">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <h1>Algorithms</h1>
+	  <h3>What's an Algorithm?</h3>
+      <p>
+	    An <strong>algorithm</strong> is actually a step-by-step procedure. It is a set of rules to follow to accomplish a task or solve a problem.
+	  </p>
+	  <p>
+		Long before the emergence of computing, humans were actually already using algorithms.
+	  </p>
+	  <p>
+	    In computer programming, algorithms are sets of rules that tell the computer how to perform a task. In reality, a computer program is an algorithm that tells the computer what steps to perform and in what order to <strong>achieve a specific task</strong>. They are written using a <strong>programming language</strong>.
+	  </p>
+	  <h3>The different types of algorithms</h3>
+	  <p>
+	    There is a wide variety of algorithms, classified according to the concepts they use to accomplish a task. Here are the main categories.
+	  </p>
+	  <ul>
+	  <li>
+		<strong>"Brute force" algorithms</strong> consist of testing all possible solutions until the best one is found. A randomized algorithm uses a random number at least once during the computation to find the solution to the problem.
+	  </li>
+	  </br>
+	  <li>
+	    A <strong>greedy algorithm</strong> aims to find an optimal solution for the overall problem.
+	  </li>
+	  </br>
+	  <li>
+	    A <strong>recursive algorithm</strong> allows you to solve the simplest version of a problem and then solve larger and larger versions until you find the solution to the original problem.
+	  </li>
+	  </br>
+	  <li>
+	    A <strong>dynamic programming algorithm</strong> breaks down a complex problem into a collection of simpler subproblems. All these subproblems are solved once, and their solution is stored for future use.
+	  </li>
+	  </ul>
+	  <h3>Sorting algorithms</h3>
+	  <p>
+		A sorting algorithm allows you to place the elements of a list in a certain order.
+	  </p>
+	  <p>
+	    There are many sorting algorithms, with their pros and cons. Here are some examples:
+	  </p>
+	  <ul>
+	    <li>
+	      <strong>Linear sorting algorithms</strong> find the smallest items in a list, sort them, add them to a new list, and remove them from the original list.
+	    </li>
+		</br>
+		<li>
+		  The <strong>sort by bubble</strong> consists in comparing the first two elements of the list, and inverting them if the first is greater than the second.
+		</li>
+		</br>
+		<li>
+		  <strong>Insertion sort</strong> compares each item in the list with previous items until a smaller item is found.
+		</li>
+	  </ul>
+	  <h3>How are algorithms used in computer science?</h3>
+	  <p>
+	    It is these instructions that allow the computer to perform tasks. Computer programs themselves are algorithms written in programming languages.
+	  </p>
+	  <p>
+	    Algorithms also play a key role in the functioning of social networks, for example. They are the ones who decide which publications are displayed or which advertisements are offered to the user.
+	  </p>
+	</div>
+    <!-- JavaScript -->
+    <script src="../../javascript/index.js"></script>
+  </body>
+</html>
