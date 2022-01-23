@@ -11,10 +11,16 @@ class SnakeGame {
         this.start_size = startSize;
         this.speed = speed;
         this.gridSize = gridSize;
+        this.gridElement = document.getElementById("grid");
 
+        this.genGame();
+        this.start();
+    }
+
+
+    genGame() {
         this.die = false;
         this.snake = [[5, 5]];
-        this.gridElement = document.getElementById("grid");
         this.direction = [1, 0];
 
         for (let i = 0; i < this.startSize; i++) {
@@ -25,9 +31,7 @@ class SnakeGame {
         this.onKeyDown = this.onKeyDown.bind(this);
         document.addEventListener("keydown", this.onKeyDown, false);
         this.genApple();
-        this.start();
     }
-
 
     async start() {
         while (!this.die) {
@@ -45,9 +49,14 @@ class SnakeGame {
             var newGridItem = document.createElement("div");
             newGridItem.id = "grid_item_" + i;
             newGridItem.classList.add("grid-item");
-            // newGridItem.innerText = i
+            // newGridItem.innerText = i;
             this.gridElement.appendChild(newGridItem);
         }
+    }
+
+    deleteGrid() {
+        this.gridElement.innerHTML = "";
+        this.genGame();
     }
 
     moveSnake() {
@@ -124,7 +133,10 @@ class SnakeGame {
 
     snakeDied() {
         this.die = true;
+        if (confirm('Tu es mort, choisi "OK" si tu veux recommencer') == true) {
+            this.deleteGrid();
+        }
     }
 }
 
-const snakeGame = new SnakeGame(1, 75, 50);
+var snakeGame = new SnakeGame(1, 75, 50);

@@ -1,4 +1,9 @@
 var themeUsed = "light";
+var darkModeButton = document.getElementById("dark_mode");
+
+var navSettings = document.getElementById("settings");
+var navSettingsTitle = document.getElementById("settings-title");
+var settingsLanguageSelect = document.getElementById("settings-language-select");
 
 if (window.location.href.split("?").length > 1) {
     themeUsed = window.location.href.split("?")[1];
@@ -12,16 +17,12 @@ function switchTo(pageName) {
     window.location.href = url + "?" + themeUsed;
 }
 
-var navSettings = document.getElementById("settings");
-var navSettingsTitle = document.getElementById("settings-title");
-
 navSettingsTitle.addEventListener("click",
     function() {
         navSettings.classList.toggle("is-maximized");
     }
 );
 
-var settingsLanguageSelect = document.getElementById("settings-language-select");
 settingsLanguageSelect.addEventListener("change",
     function() {
         var url = window.location.href;
@@ -56,6 +57,7 @@ function setTheme(theme) {
         document.documentElement.style.setProperty("color", "white");
 
         themeUsed = "light";
+        darkModeButton.checked = false;
     } else if (theme == "dark") {
         document.documentElement.style.setProperty("--body-color", "#373e48ff");
 
@@ -74,10 +76,10 @@ function setTheme(theme) {
         document.documentElement.style.setProperty("color", "white");
         
         themeUsed = "dark";
+        darkModeButton.checked = true;
     }
 }
 
-var darkModeButton = document.getElementById("dark_mode");
 darkModeButton.addEventListener("click", 
     function() {
         if (darkModeButton.checked) {       // dark mode enable
