@@ -58,8 +58,6 @@ class SnakeGame {
         var newX = this.snake[this.snake.length-1][0] + this.direction[0];
         var newY = this.snake[this.snake.length-1][1] + this.direction[1];
 
-        console.log(newX);
-
         if (newX >= this.gridSize || newY >= this.gridSize || newX < 0 || newY < 0) {
             this.snakeDied();
             return;

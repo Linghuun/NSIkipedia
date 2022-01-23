@@ -29,12 +29,12 @@ settingsLanguageSelect.addEventListener("change",
         var url = window.location.href;
         var index = settingsLanguageSelect.selectedIndex;
         if (index == 0) {
-            var pos = url.lastIndexOf("en")
-            window.location.href = url.slice(0, pos) + url.slice(pos).replace("en", "fr");
+            var pos = url.lastIndexOf("/en/")
+            window.location.href = url.slice(0, pos) + url.slice(pos).replace("/en/", "/fr/");
         }
         if (index == 1) {
-            var pos = url.lastIndexOf("fr")
-            window.location.href = url.slice(0, pos) + url.slice(pos).replace("fr", "en");
+            var pos = url.lastIndexOf("/fr/")
+            window.location.href = url.slice(0, pos) + url.slice(pos).replace("/fr/", "/en/");
         }
     }
 );
