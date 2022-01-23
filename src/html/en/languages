@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>NSI Live Action</title>
+    
+    <!-- CSS -->
+    <link href="../../css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../css/settings_bar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/scrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/global.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="logo_link" href="index.html">
+            <img class="logo_img" src="../../assets/logo.png">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="unselectable">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="algorithme.html" class="unselectable">I - What's an algorithm ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="programming_language.html" class="unselectable">II - What's a programming language ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="languages.html" class="unselectable selected_page">III - Why there is so many language ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="licences.html" class="unselectable">IV - What are software licenses ?</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="unselectable">About</a>
+        </li>
+        <li class="nav-item" id="settings">
+          <div id="settings-title">
+            <label class="unselectable">Settings</label>
+          </div>
+          <div class="settings-main">
+            <div class="settings-items" id="settings-language">
+              <label class="unselectable">Language:</label>
+              <select id="settings-language-select">
+                <option value="0" selected>fr</option>
+                <option value="1">en</option>
+              </select>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <!-- Sommaire -->
+      <div>
+        <h1 id="sommaire">Summary</h1>
+        <ul>
+          <li><a href="languages.html#sommaire">Summary</a></li>
+          <li><a href="languages.html#introduction">Introduction</a></li>
+          <li><a href="languages.html#lg_machine">1 - Machine language</a></li>
+          <li><a href="languages.html#lg_assembleur">2 - Assembly language</a></li>
+          <li><a href="languages.html#lg_haut_niveau">3 - High-level language"</a>
+          <ul>
+            <li><a href="languages.html#lg_scripts">a) Script language</a></li> 
+            <li><a href="languages.html#lg_compiles">b) Compiled language</a></li>
+          </ul>
+          <li><a href="languages.html#lg_balisage">4 - Markup language</a></li>
+          <li><a href="languages.html#lg_requete">5 - Query language</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Introduction -->
+      <div>
+        <h2 id ="introduction">Introduction</h2>
+        <p>
+          When you want to communicate with someone, you have to know how to speak the same language, otherwise it is difficult to understand each other. Well, with a machine or more particularly a computer it is exactly the same thing.
+        </p>
+        <p>
+          The difficulty is that a computer only understands 1 and 0. So, to simplify our existence and therefore to be able to communicate easily with a computer,
+          <a href="programming_language.html">programming languages</a> were created and are used.
+        </p>
+        <p>
+          There are precisely several types of classifications on its languages.
+        </p>
+      </div>
+
+      <!-- 1 - Langage machine -->
+      <div>
+        <h2 id ="lg_machine">1 - Machine language</h2>
+        <p>
+          The <strong>machine language</strong> also called <strong>binary language</strong>, it is with this language that computers work. It consists of using two states (represented by the numbers 0 and 1) to encode information (text, images, etc.).
+        </p>
+        <p>
+          In <strong>machin language</strong>, the programmer must enter each command and all the data in <strong>binary form</strong> ie in the form of a series of <strong>bytes</strong>.
+          Each byte comprises a succession of <strong>8 bits</strong>. Each <strong>bit</strong> is represented by a 1 or a 0. Here is an example of a machine language command with 2 bytes: 11001010 00010111.
+        </p>
+        <p>
+          Let's not forget that any information whether text, images, music or video is encoded in <strong>binary language</strong>, and to mention the size of a file
+		  we use certain measures, namely: <strong>the kilobyte, the megabyte, the gigabyte or even the terabyte.</strong>
+        </p>
+      </div>
+
+
+      <!-- 2 - Langage assembleur (assembly language) -->
+      <div>
+        <h2 id="lg_assembleur">2 - Assembly language</h2>
+        <p>
+          <strong>Assembly language</strong> is a low-level language close to <strong>machine language</strong> which can be directly interpreted by the computer's microprocessor.
+        </p>
+        <p>
+          It consists in representing the combinations of bits used in <strong>binary language</strong> by easy-to-remember symbols which are then transcribed by a software called assembler in <strong>machine language</strong>, then executed by the computer.
+        </p>
+        <p>
+          Unlike a high level language (Java, C, C++), there is a correspondence between the assembly code and the <strong>machine language</strong>, so it is possible to translate the code in both directions without loss of information.</p>
+        <p>
+          Each microprocessor has its own <strong>machine language</strong>, and therefore its own <strong>assembly language</strong>. This is a problem for computer scientists so much so that to remedy it <strong>advanced (or high-level) languages</strong> have been created so that they can run on all processors, and all platforms (Windows , Linux, Mac OS).
+        </p>
+      </div>
+
+
+      <!-- 3 - Langage dit "de haut niveau" -->
+      <div>
+        <h2 id="lg_haut_niveau">3 - High-level language</h2>
+        <p>
+          The <strong>high-level language</strong> is a language that accomplishes a lot for a minimum of code and programming effort. There are a lot of them such as: Pascal, Java, C, C++, C#, Visual Basic, Python, PHP, JavaScript, Perl etc...
+        </p>
+        <p>
+          Unlike <strong>assembly language</strong> which is very close to <strong>machine language</strong>, they offer layers that make the material abstract. <strong>The assembler</strong> does not use advanced structures such as loops (while, for) and conditions (if, switch) whereas the latter are an integral part in <strong>advanced languages</strong>.
+        </p>
+        <p>
+          The family of <strong>advanced languages</strong> can be divided into two main categories:
+        </p>
+        
+        
+        <!-- a) Langages de scripts -->
+        <div>
+          <h3 id="lg_scripts">a) Script language</h3>
+          <p>
+            A script is a sequence of commands intended to be executed in their order of appearance, line by line, instruction by instruction, which can result in a more or less noticeable slowness.
+          </p>
+          <p>
+            Scripting languages ​​also use variables, control structures (loops, conditions).
+            <br>
+            <br>
+            <strong>Some examples:</strong>
+          </p>
+          <p>
+            <strong>JavaScript</strong> which is a code for programming <strong>interactive user interfaces</strong> useful for programming websites, improving the positions and indexing of pages in search engine results.
+          </p>
+          <p>
+            <strong>PHP</strong> whose main role is to develop <strong>better communication between the web page and the server</strong>. Guarantor of the stability of the pages, it is however invisible on the client side unlike JavaScript.
+          </p>
+        </div>
+
+
+        <!-- b) Langages compilés (langages interprétés) -->
+        <div>
+          <h3 id="lg_compiles">b) Compiled languages ​​(interpreted languages)</h3>
+          <p>
+             A compiled language is a language where all instructions are translated into binary code before being executed by a compiler.
+          </p>
+          <p>
+            It is decoded and then executed instruction by instruction during the execution of the program, which translates into faster execution.
+            <br>
+            <br>
+            <strong>Some examples:</strong>
+          </p>
+          <p>
+            The <strong>C language</strong> which is an essential programming language for programming a video game for example or a Web application on Microsoft. It has evolved with the appearance of new languages ​​using its syntax, such as C++ and C#.
+          </p>
+          <p>
+            <strong>Python</strong> is a cross-platform language that allows object-oriented programming and is placed under a free license used in mathematics, finance or scientific research…
+          </p>
+        </div>
+      </div>
+      
+
+      <!-- 4 - Langage de balisage -->
+      <div>
+        <h2 id="lg_balisage">4 - Markup language</h2>
+        <p>
+          A <strong>markup language</strong> is based on so-called <strong>tags</strong>, which are <strong>tags</strong> with which data (words, text etc.) to give them meaning (this is a paragraph, this is a title, quote etc.) that can be made visual (italics, bold, text color etc.) and that we can label this data in framing them with these tags.
+        </p>
+        <p>
+          There are several:
+        </p>
+        <ul>
+          <li><strong>HTML</strong> (HyperText Markup Language)</li>
+          <li><strong>CSS</strong> (Cascading Style Sheets)</li>
+          <li><strong>XML, SGML, XHTML</strong> (Xtensible HyperTextMarkup Language).</li>
+        </ul>
+      </div>
+
+
+      <!-- 5 - Langage de requête -->
+      <div>
+        <h2 id="lg_requete">5 - Query language</h2>
+        <p>
+          A query language most often qualifies the languages ​​specific to databases, they are represented in particular by the <strong>SQL</strong> (Structured Query Language) in French simply allows you to manage a database, for example to query it, insert data or delete others, ask it to bring out data according to criteria that I set for it.
+        </p>
+        <p>
+          You have now learned the types of computer languages ​​and the usefulness of having created so many.
+        </p>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="../../javascript/index.js"></script>
+  </body>
+</html>
