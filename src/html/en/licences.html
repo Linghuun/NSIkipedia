@@ -1,0 +1,134 @@
+<!--
+skeleton Made by Damien
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>NSI Live Action</title>
+    
+    <!-- CSS -->
+    <link href="../../css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../css/settings_bar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/scrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../../css/global.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a id="logo_link" onclick="switchTo('index.html');">
+            <img class="logo_img" src="../../assets/logo.png">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a onclick="switchTo('index.html');" class="unselectable">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="switchTo('algorithme.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="switchTo('programming_language.html');" class="unselectable">II - Qu'est-ce qu'un langage de programmation ?</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="switchTo('languages.html');" class="unselectable">III - Pourquoi y a-t-il tant de langages ?</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="switchTo('licences.html');" class="unselectable selected_page">IV - Qu'est-ce que les licences logicielles ?</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="switchTo('about.html');" class="unselectable">À propos</a>
+        </li>
+        <li class="nav-item" id="settings">
+          <div id="settings-title">
+            <label class="unselectable">Paramètres</label>
+          </div>
+          <div class="settings-main">
+            <div class="settings-items" id="settings-language">
+              <label class="unselectable">Langue:</label>
+              <select id="settings-language-select">
+                <option value="0" selected>fr</option>
+                <option value="1">en</option>
+              </select>
+            </div>
+            <div class="settings-items">
+              <label for="dark_mode" class="unselectable">Mode Sombre:</label>
+              <input type="checkbox" id="dark_mode">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <h1>Software licenses</h1>
+
+      <div>
+        <h2>What is a license?</h2>
+        <p>
+          A software license is a contract by which the holder of the rights to the software authorizes an outside person to make modifications and to share them (for free or not) or to just read it. He grants
+therefore to the licensee(s) the right to install the software, use it and make a backup copy.
+        </p>
+        <p>
+          <strong>Using unlicensed software is copyright infringement.</strong>
+        </p>
+        <p>
+          Often, the rights holder not only grants the license, but also adds requirements such as prohibitions:
+        </p>
+        <ul>
+          <li>To share the purchased software with others</li>
+          <li>To study the software</li>
+          <li>To modify and share it</li>
+          <li>To resell the same software, modified or not</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>The different types of licenses :</h2>
+        <p>
+          There are different types of licenses to serve different problems, so no one license is better than another:
+        </p>
+        <ul>
+          <li><h3>Fixed license</h3>
+              <p>It is designed to be installed on a particular computer, sometimes using the MAC (Media Access Control) address to restrict use to that computer.</p> 
+          </li>
+          <li><h3>Floating license</h3>
+              <p>The floating license works on a network. As long as at least one license remains available on the network, any computer connected to the network can claim it and use it for as long as needed.</p>
+              <p><strong>Example :</strong>This allows a company to buy only a certain number of floating licenses, knowing that the number of employees using the software will not exceed the limit. Not all computers will need to be equipped with the license, which saves a significant amount of money.</p>
+          </li>
+          <li><h3>Shareware license</h3>
+          <p>Shareware licenses offer a temporary right to use the software for free with limitations. After this trial period, the user will have to pay the owner of the license to continue using the software. The user can also not wait for the end of the free period to have access to all the features.</p>
+          </li>
+          <li><h3>Free licenses</h3>
+          <p>
+             The free licenses cover free software, they give the user the following four rights:</p>
+            <ul>
+              <li>Use of the software.</li>
+              <li>Study the software to understand its mechanisms.</li>
+              <li>Modification or incorporation of the software into a derivative version.</li>
+              <li>Redistribution du logiciel et des versions dérivées, y compris sous forme payantes.</li>
+            </ul>
+            <p>Example of a free license:</p>
+            <section><img src="../../assets/Apache.png" id="apache">
+            <br>
+            <i>The Apache license</i><sup><a href="licences.htm#source1">1</a></sup>
+          </section>
+
+         </li>
+
+        </ul>
+      </div>
+      
+
+      <!-- Exemple de licences logicielles -->
+        <!-- Sources -->
+      <div>
+        <h2 id="sources">Sources :</h2>
+        <a id="source1">1</a> : <a href="https://fr.wikipedia.org/wiki/Apache_Software_Foundation">Wikipedia : Apache Foundation</a>
+    </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="../../javascript/index.js"></script>
+  </body>
+</html>
