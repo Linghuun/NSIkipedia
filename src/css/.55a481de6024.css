@@ -1,18 +1,32 @@
 #grid {
     margin: auto;
+    /* top: 5rem; */
     /* width: 18rem;                            sera généré par javascript
     height: 18rem;                              sera généré par javascript */
     display: grid;
     border: 3px solid black;
     /* grid-template-columns: auto auto;        sera généré par javascript
     grid-template-rows: auto auto;              sera généré par javascript */
+    position: relative;
 
 }
 
 .grid-item {
-    /* min-height: auto;
-    min-width: auto; */
     width: auto;
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#restart_button {
+    background-color: var(--settings-color);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#restart_button:hover {
+    background-color: var(--settings-color-hover);
 }

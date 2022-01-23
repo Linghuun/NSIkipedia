@@ -3,15 +3,14 @@ class SnakeGame {
     snakeColor = "green";
     void = "#00000000";
     /**
-     * @param {int} startSize  need to be > 1
      * @param {float} speed    in millisecond
      * @param {int} gridSize   the size of the grid 
      */
-    constructor(startSize, speed, gridSize) {
-        this.start_size = startSize;
+    constructor(speed, gridSize) {
         this.speed = speed;
         this.gridSize = gridSize;
         this.gridElement = document.getElementById("grid");
+        this.lengthElement = document.getElementById("snake_length");
 
         this.genGame();
         this.start();
@@ -20,12 +19,9 @@ class SnakeGame {
 
     genGame() {
         this.die = false;
-        this.snake = [[5, 5]];
-        this.direction = [1, 0];
 
-        for (let i = 0; i < this.startSize; i++) {
-            this.snake.push([i, 0]);
-        }
+        this.snake = [[this.gridSize / 2, this.gridSize / 2]];
+        this.direction = [1, 0];
 
         this.genGrid();
         this.onKeyDown = this.onKeyDown.bind(this);
@@ -34,7 +30,7 @@ class SnakeGame {
     }
 
     async start() {
-        while (!this.die) {
+        while (1) {
             await this.sleep(this.speed);
             this.moveSnake();
         }
@@ -44,7 +40,6 @@ class SnakeGame {
     genGrid() {
         var gridTemplate =  " auto".repeat(this.gridSize) + ";";
         this.gridElement.style.cssText += "width:" + (this.gridSize + (2*50) / 16) + "rem; height:" + (this.gridSize + (2*50) / 16) + "rem; grid-template-columns:" + gridTemplate + " grid-template-rows: " + gridTemplate;
-        console.log("generate_grid");
         for (let i = 0; i < (this.gridSize*this.gridSize); i++) {
             var newGridItem = document.createElement("div");
             newGridItem.id = "grid_item_" + i;
@@ -54,7 +49,7 @@ class SnakeGame {
         }
     }
 
-    deleteGrid() {
+    restartGame() {
         this.gridElement.innerHTML = "";
         this.genGame();
     }
@@ -63,7 +58,7 @@ class SnakeGame {
         var newX = this.snake[this.snake.length-1][0] + this.direction[0];
         var newY = this.snake[this.snake.length-1][1] + this.direction[1];
 
-        console.log(this.snake.includes([newX, newY]));
+        console.log(newX);
 
         if (newX >= this.gridSize || newY >= this.gridSize || newX < 0 || newY < 0) {
             this.snakeDied();
@@ -80,6 +75,7 @@ class SnakeGame {
 
         if (newPart.style.backgroundColor == this.appleColor) {
             this.genApple();
+            this.lengthElement.innerText = this.lengthElement.innerText.replace(this.lengthElement.innerText.split(":")[1], " " + this.snake.length);
         } else if (newPart.style.backgroundColor == this.snakeColor) {
             this.snakeDied();
         } else {
@@ -127,16 +123,26 @@ class SnakeGame {
 
         var gridItem = this.getGridElement(appleX, appleY);
         if (gridItem != null) {
-            gridItem.style.backgroundColor = this.appleColor;
+            if (gridItem.style.backgroundColor == this.snakeColor) {
+                this.genApple();
+            } else {
+                gridItem.style.backgroundColor = this.appleColor;
+            }
         }
     }
 
     snakeDied() {
-        this.die = true;
-        if (confirm('Tu es mort, choisi "OK" si tu veux recommencer') == true) {
-            this.deleteGrid();
+        if (!this.die) {
+            this.die = true;
+            if (this.snake.length == this.gridSize*this.gridSize) {
+                if (confirm('Tu as gagné, choisi "OK" si tu veux recommencer')) {
+                    this.restartGame();
+                }
+            } else if (confirm('Tu es mort, choisi "OK" si tu veux recommencer')) {
+                this.restartGame();
+            }
         }
     }
 }
 
-var snakeGame = new SnakeGame(1, 75, 50);
+var snakeGame = new SnakeGame(75, 30);
