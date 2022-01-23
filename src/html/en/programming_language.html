@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>NSI Live Action</title>
@@ -15,27 +15,27 @@
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a id="logo_link" onclick="switchTo('index.html');">
+          <a id="logo_link" href="index.html">
             <img class="logo_img" src="../../assets/logo.png">
           </a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('index.html');" class="unselectable">Home</a>
+          <a href="index.html" class="unselectable">Home</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('algorithme.html');" class="unselectable">I - What's an algorithm?</a>
+          <a href="algorithme.html" class="unselectable">I - What's an algorithm?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('programming_language.html');" class="unselectable selected_page">II - What's a programming language?</a>
+          <a href="programming_language.html" class="unselectable selected_page">II - What's a programming language?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('languages.html');" class="unselectable">III - Why there is so many language?</a>
+          <a href="languages.html" class="unselectable">III - Why there is so many language?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('licences.html');" class="unselectable">IV - What are software licenses?</a>
+          <a href="licences.html" class="unselectable">IV - What are software licenses?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('about.html');" class="unselectable">About</a>
+          <a href="about.html" class="unselectable">About</a>
         </li>
         <li class="nav-item" id="settings">
           <div id="settings-title">
@@ -48,10 +48,6 @@
                 <option value="0">fr</option>
                 <option value="1" selected>en</option>
               </select>
-            </div>
-            <div class="settings-items">
-              <label for="dark_mode" class="unselectable">Mode Sombre:</label>
-              <input type="checkbox" id="dark_mode">
             </div>
           </div>
         </li>
@@ -100,26 +96,23 @@
         <strong>Advantages:</strong>
         <ul>
           <li>
-            Faire obstruction des méchanisme originel des machines.
+            To obstruct the original mechanism of the machines.
           </li>
           <li>
-            Ne pas avoir besoin de connaitre le langage de la machine.
+            No need to know the language of the machine.
           </li>
           <li>
-            Permettre différentes techniques, chacune adapté à son secteur
-            d'utilisation. Mais laissons cette partie là pour <a href="languages.html">la
-              diversité des langages</a>.
+            Allow different techniques, each adapted to its sector of use.
+			But let's leave that part for <a href="languages.html">the diversity of languages</a>.
           </li>
         </ul>
-        <strong>Les inconvénients :</strong>
+        <strong>Drawbacks:</strong>
         <ul>
           <li>
-            Un assembleur ou un compilateur est nécessaire pour transformer le
-            code source en une forme compréhensible par la machine.
+            An assembler or compiler is needed to transform the source code into a machine-readable form.
           </li>
           <li>
-            En fonction de ce que l'on veut faire, manier plusieurs langages est
-            parfois obligatoire.
+            Depending on what you want to do, handling several languages is sometimes sometimes mandatory.
           </li>
         </ul>
       </div>
@@ -127,42 +120,36 @@
 
       <!-- L'histoire des langages de programmation -->
       <div>
-        <h2 id="history">L'histoire des langages de programmation : </h2>
+        <h2 id="history">The history of programming languages:</h2>
         <p>
-          Avant leurs arrivé, pour communiquer et utiliser une machine, il
-          fallait parler son langage, donc la plupart du temps du binaire. Cela ne
-          permettait malheureusement pas de faire fonctionner de longs programme
-          car cela en devenait trop fastidieux.
+          Before their arrival, to communicate and use a machine, it was necessary to speak its had to speak its language, so most of the time in binary. This did not unfortunately did not allow to run long programs because it became too tedious because it became too tedious.
         </p>
         <section>
           <img src="../../assets/langage_machine.png">
           <br>
-          <i>Un exemple de langage machine</i><sup><a href="programming_language.html#source2">2</a></sup>
+          <i>An example of machine language</i><sup><a href="programming_language.html#source2">2</a></sup>
         </section>
 
         <p>
-          Très rapidement donc, des premiers langages de programmation sont
-          arrivés. On peut penser à Fortron ou Cobol par exemple, facilitant
-          grandement la programmation.
+          Very quickly, therefore, the first programming languages ​​arrived. We can think of Fortron or Cobol for example, greatly facilitating programming.
         </p>
         <section>
           <img src="../../assets/cobol.png">
           <br>
-          <i>Un code source en Cobol</i><sup><a href="programming_language.html#source3">3</a></sup>
+          <i>A source code in Cobol</i><sup><a href="programming_language.html#source3">3</a></sup>
         </section>
       
         <p>
-          Désormais, des environnements de développement intégré (IDE) sont
-          proposés. Ils permettent de faciliter encore plus le travail du
-          programmeur. L'affichage permet une plus grande visiblité <a href="../.55a481de6024/.55a481de6024.html">:</a> désormais on
-          retrouve le plus souvent une coloration syntaxique en fonction des
-          éléments du code source et d'autre changements d'affichage bien
-          pratique.
+          Now, integrated development environments (IDE) are offered. They facilitate even more the work of the
+		  programmer. Display allows greater visibility <a href="../.55a481de6024/.55a481de6024.html">:</a> now we
+		  most often finds a syntactic coloring according to the
+		  source code elements and other display changes though
+		  convenient.
         </p>
         <section>
           <img src="../../assets/IDE.png" id="IDE">
           <br>
-          <i>Eclipse, un célèbre IDE</i><sup><a href="programming_language.html#source4">4</a></sup>
+          <i>Eclipse, a famous IDE</i><sup><a href="programming_language.html#source4">4</a></sup>
         </section>
       
       </div>
@@ -171,8 +158,8 @@
       <!-- Sources -->
       <div>
         <h2 id="sources">Sources :</h2>
-        <a id="source1">1</a> : <a href="https://leblogducodeur.fr/quels-langages-de-programmation-apprendre-en-2020/">Le blog du Codeur</a>
-        <a id="source2">2</a> : <a href="https://www.wikiwand.com/fr/Compilateur">Wikiwand: Compilateur</a>
+        <a id="source1">1</a> : <a href="https://leblogducodeur.fr/quels-langages-de-programmation-apprendre-en-2020/">The coder's blog</a>
+        <a id="source2">2</a> : <a href="https://www.wikiwand.com/fr/Compilateur">Wikiwand: Compiler</a>
         <a id="source3">3</a> : <a href="https://fr.wikipedia.org/wiki/Cobol">Wikipedia: Cobol</a>
         <a id="source4">4</a> : <a href="https://www.eclipse.org/che/extend/artik/">Eclipse</a>
       </ul>
