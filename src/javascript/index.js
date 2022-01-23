@@ -12,6 +12,7 @@ if (window.location.href.split("?").length > 1) {
 
 function switchTo(pageName) {
     var url = window.location.href.split("?")[0];
+    url = url.replace(url.split("#")[1], "");
     let n = window.location.href.split("/").length;
     url = url.replace(url.split("/")[n-1], "") + pageName;
     window.location.href = url + "?" + themeUsed;
