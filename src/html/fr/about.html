@@ -27,7 +27,7 @@ skeleton Made by Damien
           <a onclick="switchTo('index.html');" class="unselectable">Accueil</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('algorithme.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
+          <a onclick="switchTo('algorithm.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
         </li>
         <li class="nav-item">
           <a onclick="switchTo('programming_language.html');" class="unselectable">II - Qu'est-ce qu'un langage de programmation ?</a>
@@ -91,8 +91,12 @@ skeleton Made by Damien
         nous donnait une idée de à quoi devait ressembler le site.
       </p>
       <div id="arrows_container">
-        <div id="left_arrow"></div>
-        <label>Précédemment</label>
+        <div class="arrows_container_item" onclick='switchTo("licences.html");'>
+          <div id="left_arrow"></div>
+          <div class="separator"></div>
+          <label class="unselectable">Précédemment</label>
+        </div>
+        <div></div>
       </div>
     </div>
     <!-- JavaScript -->

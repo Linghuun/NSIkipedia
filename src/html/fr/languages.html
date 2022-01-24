@@ -23,7 +23,7 @@
           <a onclick="switchTo('index.html');" class="unselectable">Accueil</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('algorithme.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
+          <a onclick="switchTo('algorithm.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
         </li>
         <li class="nav-item">
           <a onclick="switchTo('programming_language.html');" class="unselectable">II - Qu'est-ce qu'un langage de programmation ?</a>
@@ -266,6 +266,18 @@
       <div>
         <h2 id="sources">Sources :</h2>
         <a id="source1">1</a> : <a href="https://youtu.be/biOMz4puGt8">Fireship : CSS navbar</a>
+      </div>
+      <div id="arrows_container">
+        <div class="arrows_container_item"  onclick='switchTo("programming_language.html");'>
+          <div id="left_arrow"></div>
+          <div class="separator"></div>
+          <label class="unselectable">Précédemment</label>
+        </div>
+        <div class="arrows_container_item" onclick='switchTo("licences.html");'>
+          <label class="unselectable">Suivant</label>
+          <div class="separator"></div>
+          <div id="right_arrow"></div>
+        </div>
       </div>
     </div>
     <!-- JavaScript -->

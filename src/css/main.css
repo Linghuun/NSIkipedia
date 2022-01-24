@@ -52,23 +52,64 @@ Made by Damien and Adam
 }
 
 #arrows_container {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     height: 3rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-#arrows_container label {
-    margin: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+
+.arrows_container_item {
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--settings-color);
+    border-radius: 0.5rem;
+
+    background-color: var(--settings-color);
+}
+
+
+.arrows_container_item:hover {
+    background-color: var(--settings-color-hover);
+    border-color: var(--settings-color-hover);
+}
+
+.arrows_container_item div {
+    border-color: var(--main-color);
 }
 
 #left_arrow {
     width: 0; 
     height: 0; 
-    border-top: 1.5rem solid transparent;
-    border-bottom: 1.5rem solid transparent; 
-    border-right: 1.5rem solid var(--nav-color);
+    border-top: .9rem solid transparent;
+    border-bottom: .9rem solid transparent;
 
-    position: absolute;
+    border-right-width: .9rem;
+    border-style: solid;
+
+    border-left: 0;
+}
+
+#right_arrow {
+    width: 0; 
+    height: 0; 
+    border-top: .9rem solid transparent;
+    border-bottom: .9rem solid transparent; 
+
+    border-left-width: .9rem;
+    border-left-style: solid;
+
+    border-right: 0;
+}
+
+.separator {
+    width: 1rem;
 }
