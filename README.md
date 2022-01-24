@@ -23,3 +23,6 @@ Si ça vous amuse vous pouvez tester ce projet et le "noté", si vous voulez l'u
 
 
 # ALL IS YOURS!
+
+*et jugez pas la qualité de la rédaction et du français svp TwT,
+pardonnez nous pour ce massacre ahaha*
