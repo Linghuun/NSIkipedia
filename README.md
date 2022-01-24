@@ -11,4 +11,15 @@ L'objectif était simple, on avait choisi un thème (ici `les langages informati
 3. Pourquoi y a-t-il tant de langages ?
 4. Qu'est-ce que les licences logicielles ?
 
-C'est ce qu'on a essayé de faire (mais avec quelques complication, au départ j'étais *(Dams4K)* le seul à travailler ahah) et ayant peu d'experience en HTML5 (mais plus que mes camarades, surtout côté programmation car ça faisait 5ans que je programmais pour le loisir) je me suis dit que se serai une bonne experience d'essayer de pousser le site au maximum à ce qu'un vrai site d'information comme wikipédia pouvais proposer, alors je me suis grandement inspiré du designe de [ReadTheDocs](https://readthedocs.org/) et plus précisément de la documentation de godotengine
+C'est ce qu'on a essayé de faire (mais avec quelques complication, au départ j'étais *(Dams4K)* le seul à travailler ahah) et ayant peu d'experience en HTML5 (mais plus que mes camarades, surtout côté programmation car ça faisait 5ans que je programmais pour le loisir) je me suis dit que se serai une bonne experience d'essayer de pousser le site au maximum à ce qu'un vrai site d'information comme wikipédia pouvais proposer, alors je me suis grandement inspiré du designe de [ReadTheDocs](https://readthedocs.org/) et plus précisément de la documentation de godotengine.
+
+Mais au final, pourquoi ce projet est ouvert et restera ouvert au public?
+1. Car on a rajouté le lien vers ce dépo sur le site pour rajouter "plus de réalisme"
+2. Car ça peut peut-être donner des idées à des personnes
+3. Et car flemme de le rendre privé
+
+Si ça vous amuse vous pouvez tester ce projet et le "noté", si vous voulez l'utiliser pour je ne sais quelle(s) raison(s) faite le *(Youhou licence MIT)* 
+
+
+
+# ALL IS YOURS!
