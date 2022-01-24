@@ -113,3 +113,7 @@ Made by Damien and Adam
 .separator {
     width: 1rem;
 }
+
+.main iframe{
+    width:40vw;
+}
