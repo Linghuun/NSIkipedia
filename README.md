@@ -11,4 +11,48 @@ L'objectif était simple, on avait choisi un thème (ici `les langages informati
 3. Pourquoi y a-t-il tant de langages ?
 4. Qu'est-ce que les licences logicielles ?
 
-C'est ce qu'on a essayé de faire (mais avec quelques complication, au départ j'étais *(Dams4K)* le seul à travailler ahah) et ayant peu d'experience en HTML5 (mais plus que mes camarades, surtout côté programmation car ça faisait 5ans que je programmais pour le loisir) je me suis dit que se serai une bonne experience d'essayer de pousser le site au maximum à ce qu'un vrai site d'information comme wikipédia pouvais proposer, alors je me suis grandement inspiré du designe de [ReadTheDocs](https://readthedocs.org/) et plus précisément de la documentation de godotengine
+C'est ce qu'on a essayé de faire (mais avec quelques complication, au départ j'étais *(Dams4K)* le seul à travailler ahah) et ayant peu d'experience en HTML5 (mais plus que mes camarades, surtout côté programmation car ça faisait 5ans que je programmais pour le loisir) je me suis dit que se serai une bonne experience d'essayer de pousser le site au maximum à ce qu'un vrai site d'information comme wikipédia pouvais proposer, alors je me suis grandement inspiré du designe de [ReadTheDocs](https://readthedocs.org/) et plus précisément de la documentation de godotengine.
+
+Mais au final, pourquoi ce projet est ouvert et restera ouvert au public?
+1. Car on a rajouté le lien vers ce dépo sur le site pour rajouter "plus de réalisme"
+2. Car ça peut peut-être donner des idées à des personnes
+3. Et car flemme de le rendre privé
+
+Si ça vous amuse vous pouvez tester ce projet et le "noté", si vous voulez l'utiliser pour je ne sais quelle(s) raison(s) faite le *(Youhou licence MIT)* 
+
+
+
+# ALL IS YOURS!
+
+*et jugez pas la qualité de la rédaction et du français svp TwT,
+pardonnez nous pour ce massacre ahaha*
+
+
+
+
+
+
+*et ce code ne sera normalement plus jamais update à partir de 26/01/2022*
+
+
+
+
+
+
+
+
+*pensée triste pour toutes les personnes de la classe qui n'ont pas encore commencé le site alors qu'on est le 24/01/2022 et qu'ils doivent le rendre le 25/01/2022......... (c'est pas une blague)*
+
+
+
+
+
+
+
+
+
+
+
+
+
+*don't forget the unsub button*
