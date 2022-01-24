@@ -11,11 +11,21 @@ if (window.location.href.split("?").length > 1) {
 }
 
 function switchTo(pageName) {
+    url = genURL(pageName);
+    window.location.href = url;
+}
+
+function genURL(pageName) {
     var url = window.location.href.split("?")[0];
     url = url.replace(url.split("#")[1], "");
     let n = window.location.href.split("/").length;
-    url = url.replace(url.split("/")[n-1], "") + pageName;
-    window.location.href = url + "?" + themeUsed;
+
+    if (pageName == null) {
+        pageName = url.split("/")[n-1];
+    }
+    
+    url = url.replace(url.split("/")[n-1], "") + pageName + "?" + themeUsed;
+    return url;
 }
 
 navSettingsTitle.addEventListener("click",
@@ -26,7 +36,7 @@ navSettingsTitle.addEventListener("click",
 
 settingsLanguageSelect.addEventListener("change",
     function() {
-        var url = window.location.href;
+        var url = genURL(null);
         var index = settingsLanguageSelect.selectedIndex;
         if (index == 0) {
             var pos = url.lastIndexOf("/en/")
