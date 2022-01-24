@@ -26,3 +26,33 @@ Si ça vous amuse vous pouvez tester ce projet et le "noté", si vous voulez l'u
 
 *et jugez pas la qualité de la rédaction et du français svp TwT,
 pardonnez nous pour ce massacre ahaha*
+
+
+
+
+
+
+*et ce code ne sera normalement plus jamais update à partir de 26/01/2022*
+
+
+
+
+
+
+
+
+*pensée triste pour toutes les personnes de la classe qui n'ont pas encore commencé le site alors qu'on est le 24/01/2022 et qu'ils doivent le rendre le 25/01/2022......... (c'est pas une blague)*
+
+
+
+
+
+
+
+
+
+
+
+
+
+*don't forget the unsub button*
