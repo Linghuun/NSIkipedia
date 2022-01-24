@@ -19,7 +19,7 @@ function genURL(pageName) {
     var url = window.location.href.split("?")[0];
     url = url.replace(url.split("#")[1], "");
     let n = window.location.href.split("/").length;
-
+    
     if (pageName == null) {
         pageName = url.split("/")[n-1];
     }

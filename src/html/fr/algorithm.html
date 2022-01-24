@@ -59,64 +59,82 @@
     </nav>
     <div class="main">
       <h1>Les algorithmes</h1>
-      <h3>Qu'est-ce qu'un algorithme ?</h3>
+      <div id="summary">
+        <h2>Sommaire</h2>
+        <ul>
+          <li><a href="#summary">Sommaire</a></li>
+          <li><a href="#what_it_is">Qu'est-ce qu'un algorithme ?</a></li>
+          <li><a href="#types">Les différents types d'algorithmes</a></li>
+          <li><a href="#sorting">Les algorithmes de tri</a></li>
+          <li><a href="#how">Comment les algorithmes sont-ils utilisés en informatique ?</a></li>
+        </ul>
+      </div>
+      <div id="what_it_is">
+        <h3>Qu'est-ce qu'un algorithme ?</h3>
+          <p>
+          Un <strong>algorithme</strong> est en fait une procédure par étapes. C’est un ensemble de règles à suivre pour accomplir une tâche ou résoudre un problème.
+        </p>
         <p>
-        Un <strong>algorithme</strong> est en fait une procédure par étapes. C’est un ensemble de règles à suivre pour accomplir une tâche ou résoudre un problème.
-      </p>
-      <p>
-      Bien avant l’émergence de l’informatique, les humains utilisaient en fait déjà les algorithmes
-      </p>
-      <p>
-        Dans le domaine de la programmation informatique, les algorithmes sont des ensembles de règles indiquant à l’ordinateur comment effectuer une tâche. En réalité, un programme informatique est un algorithme indiquant à l’ordinateur quelles étapes exécuter et dans quel ordre pour <strong>accomplir une tâche spécifique</strong>. Ils sont écrits à l’aide d’un <strong>langage de programmation</strong>.
-      </p>
-      <h3>Les différents types d'algorithmes</h3>
-      <p>
-        Il existe une large variété d’algorithmes, classés en fonction des concepts qu’ils utilisent pour accomplir une tâche. Voici les principales catégories.
-      </p>
-      <ul>
-      <li>
-        Les <strong>algorithmes de force brute</strong> consistent à tester toutes les solutions possibles jusqu’à ce que la meilleure soit trouvée. Un algorithme randomisé utilise un nombre aléatoire au moins une fois pendant le calcul pour trouver la solution au problème.
-      </li>
-      </br>
-      <li>
-        Un <strong>algorithme glouton</strong> a pour but de trouver une solution optimale pour le problème global. 
-      </li>
-      </br>
-      <li>
-        Un <strong>algorithme récursif</strong>  permet de résoudre la version la plus simple d’un problème pour ensuite résoudre des versions de plus en plus larges jusqu’à trouver la solution au problème d’origine.
-      </li>
-      </br>
-      <li>
-        Un <strong>algorithme de programmation dynamique</strong> permet de décomposer un problème complexe en une collection de sous-problème plus simples. Tous ces sous-problèmes sont résolus une fois, et leur solution est stockée pour un usage futur.
-      </li>
-      </ul>
-      <h3>Les algorithmes de tri</h3>
-      <p>
-        Un algorithme de tri permet de placer les éléments d’une liste dans un certain ordre.
-      </p>
-      <p>
-        Il existe de nombreux algorithmes de tri, avec leurs avantages et inconvénients. En voici quelques exemples:
-      </p>
-      <ul>
+        Bien avant l’émergence de l’informatique, les humains utilisaient en fait déjà les algorithmes
+        </p>
+        <p>
+          Dans le domaine de la programmation informatique, les algorithmes sont des ensembles de règles indiquant à l’ordinateur comment effectuer une tâche. En réalité, un programme informatique est un algorithme indiquant à l’ordinateur quelles étapes exécuter et dans quel ordre pour <strong>accomplir une tâche spécifique</strong>. Ils sont écrits à l’aide d’un <strong>langage de programmation</strong>.
+        </p>
+      </div>
+      <div id="types">
+        <h3>Les différents types d'algorithmes</h3>
+        <p>
+          Il existe une large variété d’algorithmes, classés en fonction des concepts qu’ils utilisent pour accomplir une tâche. Voici les principales catégories.
+        </p>
+        <ul>
         <li>
-          Les <strong>algorithmes de tri linéaire</strong> permettent de trouver les plus petits éléments d’une liste, de les trier, de les ajouter à une nouvelle liste et de les supprimer de la liste originale.
+          Les <strong>algorithmes de force brute</strong> consistent à tester toutes les solutions possibles jusqu’à ce que la meilleure soit trouvée. Un algorithme randomisé utilise un nombre aléatoire au moins une fois pendant le calcul pour trouver la solution au problème.
         </li>
-      </br>
-      <li>
-        Le <strong>tri par bulle</strong> consiste à comparer les deux premiers éléments de la liste, et à les inverser si le premier est plus grand que le second.
-      </li>
-      </br>
-      <li>
-        Le <strong>tri par insertion</strong> consiste à comparer chaque élément de la liste avec les éléments précédents jusqu’à ce qu’un élément plus petit soit trouvé
-      </li>
-      </ul>
-      <h3>Comment les algorithmes sont-ils utilisés en informatique ?</h3>
-      <p>
-        Ce sont ces instructions qui permettent à l’ordinateur d’effectuer des tâches. Les programmes informatiques eux-mêmes sont des algorithmes écrits dans des langages de programmation.
-      </p>
-      <p>
-        Les algorithmes jouent aussi un rôle clé dans le fonctionnement des réseaux sociaux par exemple. Ce sont eux qui décident quelles publications s’affichent ou quelles publicités sont proposées à l’utilisateur.
-      </p>
+        </br>
+        <li>
+          Un <strong>algorithme glouton</strong> a pour but de trouver une solution optimale pour le problème global. 
+        </li>
+        </br>
+        <li>
+          Un <strong>algorithme récursif</strong>  permet de résoudre la version la plus simple d’un problème pour ensuite résoudre des versions de plus en plus larges jusqu’à trouver la solution au problème d’origine.
+        </li>
+        </br>
+        <li>
+          Un <strong>algorithme de programmation dynamique</strong> permet de décomposer un problème complexe en une collection de sous-problème plus simples. Tous ces sous-problèmes sont résolus une fois, et leur solution est stockée pour un usage futur.
+        </li>
+        </ul>
+      </div>
+      <div id="sorting">
+        <h3>Les algorithmes de tri</h3>
+        <p>
+          Un algorithme de tri permet de placer les éléments d’une liste dans un certain ordre.
+        </p>
+        <p>
+          Il existe de nombreux algorithmes de tri, avec leurs avantages et inconvénients. En voici quelques exemples:
+        </p>
+        <ul>
+          <li>
+            Les <strong>algorithmes de tri linéaire</strong> permettent de trouver les plus petits éléments d’une liste, de les trier, de les ajouter à une nouvelle liste et de les supprimer de la liste originale.
+          </li>
+        </br>
+        <li>
+          Le <strong>tri par bulle</strong> consiste à comparer les deux premiers éléments de la liste, et à les inverser si le premier est plus grand que le second.
+        </li>
+        </br>
+        <li>
+          Le <strong>tri par insertion</strong> consiste à comparer chaque élément de la liste avec les éléments précédents jusqu’à ce qu’un élément plus petit soit trouvé
+        </li>
+        </ul>
+      </div>
+      <div id="how">
+        <h3>Comment les algorithmes sont-ils utilisés en informatique ?</h3>
+        <p>
+          Ce sont ces instructions qui permettent à l’ordinateur d’effectuer des tâches. Les programmes informatiques eux-mêmes sont des algorithmes écrits dans des langages de programmation.
+        </p>
+        <p>
+          Les algorithmes jouent aussi un rôle clé dans le fonctionnement des réseaux sociaux par exemple. Ce sont eux qui décident quelles publications s’affichent ou quelles publicités sont proposées à l’utilisateur.
+        </p>
+      </div>
       <div id="arrows_container">
         <div class="arrows_container_item"  onclick='switchTo("index.html");'>
           <div id="left_arrow"></div>
