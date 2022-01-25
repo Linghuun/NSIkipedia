@@ -19,27 +19,27 @@ skeleton Made by Damien
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a id="logo_link" onclick="switchTo('index.html');">
+          <a id="logo_link" onclick="switchTo('index.html');"> <!-- Pas de href car impossible de garder le theme sombre -->
             <img class="logo_img" src="../../assets/logo.png">
           </a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('index.html');" class="unselectable selected_page">Accueil</a>
+          <a onclick="switchTo('index.html');" class="unselectable selected_page">Accueil</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('algorithm.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
+          <a onclick="switchTo('algorithm.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('programming_language.html');" class="unselectable">II - Qu'est-ce qu'un langage de programmation ?</a>
+          <a onclick="switchTo('programming_language.html');" class="unselectable">II - Qu'est-ce qu'un langage de programmation ?</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('languages.html');" class="unselectable">III - Pourquoi y a-t-il tant de langages ?</a>
+          <a onclick="switchTo('languages.html');" class="unselectable">III - Pourquoi y a-t-il tant de langages ?</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('licences.html');" class="unselectable">IV - Qu'est-ce que les licences logicielles ?</a>
+          <a onclick="switchTo('licences.html');" class="unselectable">IV - Qu'est-ce que les licences logicielles ?</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('about.html');" class="unselectable">À propos</a>
+          <a onclick="switchTo('about.html');" class="unselectable">À propos</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item" id="settings">
           <div id="settings-title">
@@ -62,8 +62,53 @@ skeleton Made by Damien
       </ul>
     </nav>
     <div class="main">
-      <h1>Titre</h1>
-      index fr
+      <h1>Menu</h1>
+      <div id="summary">
+        <h2>Sommaire</h2>
+        <ul>
+          <li><a href="#summary">Sommaire</a></li>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#dealwith">Quelles questions traitons nous ?</a></li>
+          <li><a href="#boring-mode-disable">Peur de vous ennuyer ?</a></li>
+        </ul>
+      </div>
+      <div id="intro">
+        <h2>Introduction</h2>
+        <p>
+          Vous vous demandez peut-être pourquoi y a-t'il autant de langages de programmation ? Pourquoi
+          un langage universel n'existe pas ? Pourquoi le HTML n'est pas un langage de programmation ?
+        </p>
+        <p>
+          L'objectif de ce site est de répondre à certaines questions que vous vous posez. Nous allons
+          donc vous aider à mieux vous y retrouver, à l'aide de ce site. Que vous soyez Anglais ou Français
+          vous pourrez utiliser ce site, vous pouvez changer de langue à tout moment en cliquant sur le bouton
+          "Paramètres" en bas de la barre de navigation.
+        </p>
+      </div>
+      <div id="dealwith">
+        <h2>Quelles questions traitons nous ?</h2>
+        <p>
+          Nous allons traiter 4 grandes questions dans 4 pages différentes :
+        </p>
+        <ul>
+          <li>Qu'est-ce qu'un algorithme ?</li>
+          <li>Un langage de programmation ?</li>
+          <li>Pourquoi y a-t-il tant de langages ?</li>
+          <li>Qu'est-ce que les licences logicielles ?</li>
+        </ul>
+        <p>
+          Vous pourrez changer de page à n'importe quel moment on vous aidant de la barre de navigation
+          qui se situe à droite OU en utilisant les boutons "Précédent" et "Suivant".
+        </p>
+      </div>
+      <div>
+        <h2 id="boring-mode-disable">Peur de vous ennuyer ?</h2>
+        <p>
+          Vous avez peur de vous ennuyer ? Entre 2 pages vous pouvez avoir envie de vous amuser, nous avons
+          pensé à vous ! Dans la page <a onclick="switchTo('programming_language.html');">II - Qu'est-ce qu'un langage de programmation ?</a> <!-- pas de href pour pouvoir garder le theme sombre -->
+          un lien vers une page secrete a été caché, saurez vous retrouver ce lien ?
+        </p>
+      </div>
       <div id="arrows_container">
         <div></div>
         <div class="arrows_container_item" onclick='switchTo("algorithm.html");'>

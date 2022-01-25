@@ -21,40 +21,40 @@
           </a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('index.html');" class="unselectable">Accueil</a> <!-- Pas de href car impossible de garder le theme sombre -->
+          <a onclick="switchTo('index.html');" class="unselectable">Home</a> <!-- Pas de href car impossible de garder le theme sombre -->
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('algorithm.html');" class="unselectable">I - Qu'est-ce qu'un algorithme ?</a>
+          <a onclick="switchTo('algorithm.html');" class="unselectable">I - What's an algorithm?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('programming_language.html');" class="unselectable">II - Qu'est-ce qu'un langage de programmation ?</a>
+          <a onclick="switchTo('programming_language.html');" class="unselectable">II - What's a programming language?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('languages.html');" class="unselectable">III - Pourquoi y a-t-il tant de langages ?</a>
+          <a onclick="switchTo('languages.html');" class="unselectable">III - Why there is so many language?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('licences.html');" class="unselectable">IV - Qu'est-ce que les licences logicielles ?</a>
+          <a onclick="switchTo('licences.html');" class="unselectable">IV - What are software licenses?</a>
         </li>
         <li class="nav-item">
-          <a onclick="switchTo('about.html');" class="unselectable">À propos</a>
+          <a onclick="switchTo('about.html');" class="unselectable">About</a>
         </li>
         <li class="nav-item">
           <a onclick="switchTo('.55a481de6024.html');" class="unselectable selected_page"><i>Snake (easteregg)</i></a>
         </li>
         <li class="nav-item" id="settings">
           <div id="settings-title">
-            <label class="unselectable">Paramètres</label>
+            <label class="unselectable">Settings</label>
           </div>
           <div class="settings-main">
             <div class="settings-items" id="settings-language">
-              <label class="unselectable">Langue:</label>
+              <label class="unselectable">Language:</label>
               <select id="settings-language-select">
                 <option value="0" selected>fr</option>
                 <option value="1">en</option>
               </select>
             </div>
             <div class="settings-items">
-              <label for="dark_mode" class="unselectable">Mode Sombre:</label>
+              <label for="dark_mode" class="unselectable">Dark Mode:</label>
               <input type="checkbox" id="dark_mode">
             </div>
           </div>
@@ -62,7 +62,7 @@
       </ul>
     </nav>
     <div class="main" style="align-items: center;">
-      <h1>Snake (utiliser les flèches directionnelles)</h1>
+      <h1>Snake (use the directional arrows)</h1>
       <h2 id="snake_length">Score : 1</h2>
       <div id="grid"></div>
       <h2 id="restart_button" class="unselectable" onclick="snakeGame.restartGame();">RESTART</h2>
