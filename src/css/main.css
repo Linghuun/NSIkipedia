@@ -1,7 +1,3 @@
-/*
-Made by Damien and Adam
-*/
-
 .main strong {
     font-weight: 400;
 }
@@ -49,6 +45,10 @@ Made by Damien and Adam
     color: var(--main-text-color);
     text-decoration: underline;
     font-weight: 400;
+}
+
+.main a:hover {
+    font-weight: 500;
 }
 
 #arrows_container {
