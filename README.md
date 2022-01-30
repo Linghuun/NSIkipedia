@@ -56,3 +56,7 @@ pardonnez nous pour ce massacre ahaha*
 
 
 *don't forget the unsub button*
+
+
+
+Juste pour info, on a reçu la note du projet: **19.5/20** en vrai je suis un peu déçu
