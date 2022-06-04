@@ -60,3 +60,4 @@ pardonnez nous pour ce massacre ahaha*
 
 
 Juste pour info, on a reçu la note du projet: **19.5/20** en vrai je suis un peu déçu
+(enft c'est juste que le prof a pas tout regardé notre site (notre page à propos) au final on a bien eu 20/20)
